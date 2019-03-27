@@ -22,6 +22,7 @@ Route::group(['middleware' => 'auth'], function() {
 	Route::get('/email_verification/verify', 'EmailVerificationController@verify')->name('email_verification.verify');
 	// 测试
 	Route::group(['middleware' => 'email_verified'], function() {
-		
+		// 收货地址
+		Route::get('user_addresses', 'UserAddressesController@index')->name('user_addresses.index');
 	});
 });

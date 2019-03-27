@@ -36,6 +36,10 @@
                         </a>
                         <ul class="dropdown-menu" role="menu">
                             <li>
+                                <a href="{{ route('user_addresses.index') }}">
+                                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                                    收货地址
+                                </a>
                                 <a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
                                     <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
                                     退出登录
