@@ -21,8 +21,12 @@ Route::group(['middleware' => 'auth'], function() {
 	Route::get('/email_verify_notice', 'PagesController@emailVerifyNotice')->name('email_verify_notice');
 	Route::get('/email_verification/verify', 'EmailVerificationController@verify')->name('email_verification.verify');
 	// 测试
-	Route::group(['middleware' => 'email_verified'], function() {
+	Route::group(['middleware' => ['auth', 'email_verified']], function() {
 		// 收货地址
 		Route::get('user_addresses', 'UserAddressesController@index')->name('user_addresses.index');
+		// 新增收货地址
+		Route::get('user_addresses/create', 'UserAddressesController@create')->name('user_addresses.create');
+		// 修改收货地址
+		Route::post('user_addresses', 'UserAddressesController@store')->name('user_addresses.store');
 	});
 });

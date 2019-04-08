@@ -14,11 +14,13 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
+    <div id="app" class="{{ route_class() }}-page">
         @include('layouts._header')
 
-        @yield('content')
-
+        <div class="container">
+            @yield('content')
+        </div>
+        
         @include('layouts._footer')
     </div>
 
