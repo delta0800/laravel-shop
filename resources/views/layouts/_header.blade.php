@@ -40,6 +40,10 @@
                                     <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
                                     收货地址
                                 </a>
+                                <a href="{{ route('products.favorites') }}">
+                                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                                    我的收藏
+                                </a>
                                 <a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
                                     <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
                                     退出登录
