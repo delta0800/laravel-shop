@@ -380,6 +380,8 @@ class ComposerStaticInit16814ee0c1b15804b3fde056252181a6
         'App\\Http\\Requests\\UserAddressRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UserAddressRequest.php',
         'App\\Listeners\\RegisteredListener' => __DIR__ . '/../..' . '/app/Listeners/RegisteredListener.php',
         'App\\Models\\CartItem' => __DIR__ . '/../..' . '/app/Models/CartItem.php',
+        'App\\Models\\Order' => __DIR__ . '/../..' . '/app/Models/Order.php',
+        'App\\Models\\OrderItem' => __DIR__ . '/../..' . '/app/Models/OrderItem.php',
         'App\\Models\\Product' => __DIR__ . '/../..' . '/app/Models/Product.php',
         'App\\Models\\ProductSku' => __DIR__ . '/../..' . '/app/Models/ProductSku.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',

@@ -35,6 +35,8 @@ return array(
     'App\\Http\\Requests\\UserAddressRequest' => $baseDir . '/app/Http/Requests/UserAddressRequest.php',
     'App\\Listeners\\RegisteredListener' => $baseDir . '/app/Listeners/RegisteredListener.php',
     'App\\Models\\CartItem' => $baseDir . '/app/Models/CartItem.php',
+    'App\\Models\\Order' => $baseDir . '/app/Models/Order.php',
+    'App\\Models\\OrderItem' => $baseDir . '/app/Models/OrderItem.php',
     'App\\Models\\Product' => $baseDir . '/app/Models/Product.php',
     'App\\Models\\ProductSku' => $baseDir . '/app/Models/ProductSku.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
