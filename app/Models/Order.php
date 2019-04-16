@@ -61,7 +61,7 @@ class Order extends Model
 
     protected static function boot()
     {
-    	praent::boot();
+    	parent::boot();
     	// 监听模型创建事件，在写入数据库之前触发
     	static::creating(function ($model) {
     		// 如果模型的 no 字段为空
@@ -83,7 +83,7 @@ class Order extends Model
 
     public function items()
     {
-    	return $this->bolongsTo(OrderItem::class);
+    	return $this->belongsTo(OrderItem::class);
     }
 
     public static function findAvailableNo()
